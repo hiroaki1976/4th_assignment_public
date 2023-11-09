@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+      <h1>Memo Pad改</h1>
+      <div class="input-area">
+        <input id="title" type="text" placeholder="タイトルを入力（ダブルクリックすると、クリップボードにコピーされます）">
+        <textarea id="text" placeholder="本文を入力（ダブルクリックすると、クリップボードにコピーされます）"></textarea>
+      </div>
+
+    <div class="button-area">
+      <button id="save">セーブ</button>
+      <button id="clear">入力内容をクリア</button>
+    </div>
+
+    <div class="list_wrapper">
+      <h2>保存データ一覧</h2>
+      <ul id="list">
+        <!-- ここに追加データが挿入される -->
+      </ul>
+    </div>
+  
+
+    <div class="delete-button-area">
+      <button id="deleteAll">保存データを全て削除</button>
+    </div>
+  </main>
+  <footer>
+    <small>©たこさん</small>
+  </footer>
+
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
